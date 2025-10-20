@@ -8,7 +8,7 @@ import Jack from "../assets/personas/Jack Tanner.png";
  * Per-image focal offsets if a face sits too low/high.
  * Tailwind arbitrary values for object-position: object-[50%_30%]
  */
-const focal = {
+const focal: Record<string, string> = {
   "Aaliyah Brooks": "object-[50%_30%]",
   "Diego Santos":   "object-[50%_30%]",
   "Hana Ito":       "object-[50%_30%]",

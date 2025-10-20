@@ -28,4 +28,4 @@ function Metric({ label, value }: { label: string; value: number | string }) {
       <div className="text-neutral-100 font-medium">{value}</div>
     </div>
   )
-}
+}export default TelemetryHUD;

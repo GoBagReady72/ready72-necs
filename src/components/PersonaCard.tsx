@@ -1,10 +1,10 @@
 type Props = {
-  persona: { role: string; sex: 'M'|'F'; ethnicity: 'AA'|'LAT'|'CAU'|'ASN'; name: string }
-  mss: number
-  morale: number
-}
+  persona: { role: string; sex: 'M' | 'F'; ethnicity: 'AA' | 'LAT' | 'CAU' | 'ASN'; name: string };
+  mss: number;
+  morale: number;
+};
 
-export function PersonaCard({ persona, mss, morale }: Props) {
+export default function PersonaCard({ persona, mss, morale }: Props) {
   return (
     <div className="rounded-2xl border border-neutral-800 p-4 bg-neutral-900/60">
       <div className="flex items-center gap-3">
@@ -27,5 +27,5 @@ export function PersonaCard({ persona, mss, morale }: Props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

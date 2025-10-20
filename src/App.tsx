@@ -1,5 +1,5 @@
-import PersonaGrid from "./components/PersonaGrid";
+import SurvivorCardPreview from "./components/SurvivorCardPreview";
 
 export default function App() {
-  return <PersonaGrid />;
+  return <SurvivorCardPreview />;
 }
