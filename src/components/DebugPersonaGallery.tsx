@@ -82,8 +82,8 @@ export default function DebugPersonaGallery() {
                   </div>
                 )}
                 <div className="min-w-0">
-                  <div className="font-semibold truncate">{p.name ?? id || "Unknown Persona"}</div>
-                  <div className="text-xs opacity-60 truncate">{p.label ?? id || "unlabeled"}</div>
+                  <div className="font-semibold truncate">{(p.name ?? id) || "Unknown Persona"}</div>
+                  <div className="text-xs opacity-60 truncate">{(p.label ?? id) || "unlabeled"}</div>
                 </div>
               </div>
 
