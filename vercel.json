@@ -3,21 +3,39 @@
     {
       "source": "/(.*)\\.(png|jpg|jpeg|webp|gif|ico|svg)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/index.html",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "x-env", "value": "${VERCEL_ENV}" },
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive, nosnippet" }
+        {
+          "key": "x-env",
+          "value": "${VERCEL_ENV}"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive, nosnippet"
+        }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
     }
   ]
 }
